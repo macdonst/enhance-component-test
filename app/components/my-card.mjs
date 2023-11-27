@@ -1,6 +1,6 @@
 import enhance from "@enhance/element";
 
-enhance("my-card", {
+const MyCard = enhance("my-card", {
   attrs: ["title"],
   init(element) {
     console.log("My Card: ", element);
@@ -51,3 +51,5 @@ enhance("my-card", {
     console.log("DISCONNECTED");
   },
 });
+
+export default MyCard
